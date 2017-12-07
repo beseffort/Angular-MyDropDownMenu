@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Drop-Down Menu</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script type="text/javascript" src="js/dropdown-menu.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </head>
+  <body ng-app="app">
+    <div ng-controller="AppCtrl">
+      <div class="menu-div">
+
+        <h1>Drop-Down Menu</h1>
+        
+        <button dropdown-menu="MenuOptions" dropdown-model="MenuSelected" class="btn-menu">
+          Menu
+        </button>
+
+        <p>You have selected: {{MenuSelected}}</p>
+
+      </div>
+    </div>
+  </body>
+</html>
